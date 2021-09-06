@@ -1,2 +1,4 @@
-package ru.geekbrains;public class Dummy {
+package ru.geekbrains;
+
+public class Dummy {
 }
