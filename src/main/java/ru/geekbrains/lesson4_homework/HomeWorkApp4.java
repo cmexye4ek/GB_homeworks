@@ -158,8 +158,8 @@ public class HomeWorkApp4 {
         for (int i = 0; i < MAP_SIZE; i++) {
             for (int j = 0; j < MAP_SIZE; j++) {
                 if (map[i][j] == EMPTY_DOT) {
-                    map[i][j] = X_DOT;
-                    if (isWin(X_DOT)) {
+                    map[i][j] = O_DOT;
+                    if (isWin(O_DOT)) {
                         xCoordinate = i;
                         yCoordinate = j;
 
@@ -167,14 +167,16 @@ public class HomeWorkApp4 {
 
                     }
                     map[i][j] = EMPTY_DOT;
+
                 }
+
             }
         }
         for (int i = 0; i < MAP_SIZE; i++) {
             for (int j = 0; j < MAP_SIZE; j++) {
                 if (map[i][j] == EMPTY_DOT) {
-                    map[i][j] = O_DOT;
-                    if (isWin(O_DOT)) {
+                    map[i][j] = X_DOT;
+                    if (isWin(X_DOT)) {
                         xCoordinate = i;
                         yCoordinate = j;
 
@@ -186,8 +188,6 @@ public class HomeWorkApp4 {
             }
         }
         if (!idiotSwitch && !idiotSwitch2) {
-
-
             do {
                 xCoordinate = random.nextInt(MAP_SIZE);
                 yCoordinate = random.nextInt(MAP_SIZE);
@@ -250,4 +250,5 @@ public class HomeWorkApp4 {
         System.out.println("DRAW");
         return true;
     }
+
 }
