@@ -5,10 +5,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class PhoneBook {
-    private HashMap<String, ArrayList<String>> book = new HashMap<>();
+    private HashMap<String, ArrayList<String>> book;
 
     public PhoneBook() {
-
+        this.book = new HashMap<>();
 
     }
 
